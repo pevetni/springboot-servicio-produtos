@@ -33,6 +33,16 @@ public class Producto implements Serializable{
 	@Transient
 	private Integer port;
 	
+	public Producto(Long id, String nombre, BigDecimal precio, Date fechaCreacion, Integer port) {
+		this.id = id;
+		this.nombre = nombre;
+		this.precio = precio;
+		this.fechaCreacion = fechaCreacion;
+		this.port = port;
+	}
+	
+	public Producto() {}
+	
 	public Long getId() {
 		return id;
 	}
