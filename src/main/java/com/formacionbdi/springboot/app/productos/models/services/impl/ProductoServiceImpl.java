@@ -20,15 +20,25 @@ public class ProductoServiceImpl implements IProductoService{
 	@Override
 	@Transactional(readOnly = true)
 	public List<Producto> findAll() {
-		// TODO Auto-generated method stub
 		return (List<Producto>)productoRepo.findAll();
 	}
 
 	@Override
 	@Transactional(readOnly = true)
 	public Producto findById(Long id) {
-		// TODO Auto-generated method stub
 		return productoRepo.findById(id).orElse(null);
+	}
+
+	@Override
+	@Transactional
+	public Producto save(Producto producto) {
+		return productoRepo.save(producto);
+	}
+
+	@Override
+	@Transactional
+	public void deleteById(Long id) {
+		productoRepo.deleteById(id);
 	}
 	
 }
