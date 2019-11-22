@@ -16,9 +16,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.formacionbdi.springboot.app.productos.models.entity.Producto;
-import com.formacionbdi.springboot.app.productos.models.services.IProductoService;
-import com.netflix.ribbon.proxy.annotation.Http;
+import com.formacionbdi.springboot.app.commons.models.entity.Producto;
+import com.formacionbdi.springboot.app.productos.services.IProductoService;
 
 @RestController
 public class ProductoController {

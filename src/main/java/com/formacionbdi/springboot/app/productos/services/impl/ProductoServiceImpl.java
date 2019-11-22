@@ -1,4 +1,4 @@
-package com.formacionbdi.springboot.app.productos.models.services.impl;
+package com.formacionbdi.springboot.app.productos.services.impl;
 
 import java.util.List;
 
@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.formacionbdi.springboot.app.productos.models.entity.Producto;
-import com.formacionbdi.springboot.app.productos.models.repository.IProductoRepository;
-import com.formacionbdi.springboot.app.productos.models.services.IProductoService;
+import com.formacionbdi.springboot.app.commons.models.entity.Producto;
+import com.formacionbdi.springboot.app.productos.repository.IProductoRepository;
+import com.formacionbdi.springboot.app.productos.services.IProductoService;
 
 
 @Service
